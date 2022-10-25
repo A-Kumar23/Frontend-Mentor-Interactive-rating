@@ -50,7 +50,7 @@ body {
     color: white;
     cursor: pointer;
 }
-.rating:active {
+.active {
     color: white;
     background-color: hsl(217, 12%, 63%);
 }
