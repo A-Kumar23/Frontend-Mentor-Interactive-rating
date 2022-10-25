@@ -21,50 +21,76 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
       rel="stylesheet"
     />
-   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/png"
+    />
     <!-- Local stylesheet -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body class="d-flex align-items-center justify-content-center">
-    
     <main>
-        <section id="rating" class="main p-4 rounded-9">
-            <div class="star mb-4 d-flex align-items-center justify-content-center">
-                <img  src="images/icon-star.svg" alt="" >
-            </div>
-           
-            <h3 class="Heading mb-3">How Did we do?</h3>
-            <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
-                to help us improve our offering!</p>
-                <div class=" mb-3 d-flex justify-content-between">
-                    <p class="rating d-flex align-items-center justify-content-center">1</p>
-                    <p class="rating d-flex align-items-center justify-content-center">2</p>
-                    <p class="rating d-flex align-items-center justify-content-center">3</p>
-                    <p class="rating d-flex align-items-center justify-content-center">4</p>
-                    <p class="rating d-flex align-items-center justify-content-center">5</p>
-                </div>
-                <button id="submit" class="my-3 p-2 button rounded-9 w-100" type="submit">SUBMIT</button>
-        </section>
-        <section id="thankyou" class="main text-center p-4 rounded-9">
-            <div class="my-4 d-flex align-items-center justify-content-center">
-                <img  src="images/illustration-thank-you.svg" alt="" >
-            </div>
-            <div class="ratingFinal my-4 d-flex justify-content-center align-items-center m-auto rounded-9 p-2">
-                You selected 4 out of 5
-            </div>
-            <h3 class="Heading mb-3">Thank you!</h3>
-            <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
-                don’t hesitate to get in touch!
-              </p>
-               
-                
-        </section>
-        <div class="attribution">
-            Challenge by 
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
-            Coded by <a href="#">Arun Kanaujia</a>.
-          </div>
+      <section id="rating" class="main p-4 rounded-9">
+        <div class="star mb-4 d-flex align-items-center justify-content-center">
+          <img src="images/icon-star.svg" alt="" />
+        </div>
+
+        <h3 class="Heading mb-3">How Did we do?</h3>
+        <p class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="mb-3 d-flex justify-content-between">
+          <p value="1" class="rating d-flex align-items-center justify-content-center">
+            1
+          </p>
+          <p  value="2" class="rating d-flex align-items-center justify-content-center">
+            2
+          </p>
+          <p value="3" class="rating d-flex align-items-center justify-content-center">
+            3
+          </p>
+          <p  value="4" class="rating d-flex align-items-center justify-content-center">
+            4
+          </p>
+          <p value="5" class="rating d-flex align-items-center justify-content-center">
+            5
+          </p>
+        </div>
+        <button
+          id="submit"
+          class="my-3 p-2 button rounded-9 w-100"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </section>
+      <section id="thankyou" class="main text-center p-4 rounded-9">
+        <div class="my-4 d-flex align-items-center justify-content-center">
+          <img src="images/illustration-thank-you.svg" alt="" />
+        </div>
+        <div id="ratingFinal"
+          class="ratingFinal my-4 d-flex justify-content-center align-items-center m-auto rounded-9 p-2"
+        >
+          
+        </div>
+        <h3 class="Heading mb-3">Thank you!</h3>
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Arun Kanaujia</a>.
+      </div>
     </main>
-   <script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
