@@ -11,15 +11,18 @@ submit.addEventListener("click", () => {
     thankyou.style.display = "";
 })
 
-console.log(valueRating);
+valueRating.forEach(element => {
+    element.addEventListener("click", (e) => {
+        V = element.innerText;
+        ratingFinal.innerText = "You selected " + V + " out of 5";
+        removeActive();
+        element.className = "active rating d-flex align-items-center justify-content-center";
+    })
+})
 
-
-for (let i = 0; i < valueRating.length;i++){
-    // console.log(valueRating[i].innerText);
-   valueRating[i].addEventListener("click",(e) => {
-    V = valueRating[i].innerText;
-    ratingFinal.innerText = "You selected " +  V + " out of 5";
-    valueRating[i].className = "active rating d-flex align-items-center justify-content-center";   
-   })
+const removeActive = () => {
+    valueRating.forEach(element => {
+        element.classList.remove("active");
+    }
+    )
 }
-
